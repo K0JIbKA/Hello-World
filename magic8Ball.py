@@ -1,6 +1,6 @@
-import random
-def getAnswer(answerNumber):
-    if answerNumber == 1:
+import random                           # imports the 'random' module
+def getAnswer(answerNumber):            # the 'getAnswer()' function is defined
+    if answerNumber == 1:               # the program execution moves to the top of the 'getAnswer()' function
         return 'It is certain'
     elif answerNumber == 2:
         return 'It is decidedly so'
@@ -18,4 +18,6 @@ def getAnswer(answerNumber):
         return 'Outlook not so good'
     elif answerNumber == 9:
         return 'Very doubtful'
-print(getAnswer(random.randint(1, 9)))
+r = random.randint(1, 9)                # the 'random.randint(1, 9)' function is called with 2 random arguments between 1 and 9
+fortune = getAnswer(r)                  # 'getAnswer()' function is called with 'r' as argument
+print(fortune)                          # the returned string is assigned to a variable named 'fortune' which gets passed to a 'print()' call
